@@ -11,7 +11,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 
 
 
-export const Bids = () => {
+export const Profile_Menu = () => {
     const [Data, setData] = useState(null)
     const [Path, setPath] = useState('')
     const [Name, setName] = useState('')
@@ -118,107 +118,12 @@ export const Bids = () => {
                         fontSize: 25,
                         fontWeight: '900'
                     }}>
-                    Search open bids
+                    Open Bids
                 </Text>
             </View>
 
-            <View
-                style={{
-                    marginVertical: 20
-                }}>
-                <Text
-                    style={{
-                        color: '#000',
-                        fontSize: 15,
-                        fontWeight: '700'
-                    }}>
-                    Enter Name
-                </Text>
-                <TextInput
-                    style={{
-                        backgroundColor: '#D6EFD8',
-                        borderRadius: 10,
-                        paddingHorizontal: 10
-                    }}
-                    placeholder='e.g. Rajasthan'
-                    placeholderTextColor={'grey'}
-                    value={Name}
-                    onChangeText={(val) => setName(val)}
-
-                />
-            </View>
-            <View
-                style={{
-                    marginVertical: 20
-                }}>
-                <Text
-                    style={{
-                        color: '#000',
-                        fontSize: 15,
-                        fontWeight: '700'
-                    }}>
-                    Enter State
-                </Text>
-                <TextInput
-                    style={{
-                        backgroundColor: '#D6EFD8',
-                        borderRadius: 10,
-                        paddingHorizontal: 10
-                    }}
-                    placeholder='e.g. Bundi'
-                    placeholderTextColor={'grey'}
-                    value={State}
-                    onChangeText={(val) => setState(val)}
-
-                />
-            </View>
-            <View
-                style={{
-                    marginVertical: 20
-                }}>
-                <Text
-                    style={{
-                        color: '#000',
-                        fontSize: 15,
-                        fontWeight: '700'
-                    }}>
-                    Enter Category
-                </Text>
-                <TextInput
-                    style={{
-                        backgroundColor: '#D6EFD8',
-                        borderRadius: 10,
-                        paddingHorizontal: 10
-                    }}
-                    placeholder='e.g. Historic'
-                    placeholderTextColor={'grey'}
-                    value={Category}
-                    onChangeText={(val) => setCategory(val)}
-
-                />
-            </View>
-
-
-            <View>
-                <TouchableOpacity
-                    onPress={() => Path == '' ? Camer_launch() : Store()}
-                    style={{
-                        backgroundColor: Colors.Black,
-                        padding: 20,
-                        borderRadius: 20,
-                        marginHorizontal: 50
-                    }}>
-                    <Text
-                        style={{
-                            color: '#fff',
-                            fontSize: 15,
-                            fontWeight: '900',
-                            textAlign: 'center'
-                        }}>
-                        {Path == '' ? ' Submit Image' : 'Submit'}
-                    </Text>
-                </TouchableOpacity>
-            </View>
+                
+            
         </ScrollView >
     )
 }

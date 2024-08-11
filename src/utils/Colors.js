@@ -8,6 +8,8 @@ export const Colors = {
     // global color
     Black: '#000',
     White: '#fff',
+    Orange: '#ff735c',
+    Yellow: '#FBD46D',
     
     // Bottom Tab 
     Active_Tab: '#000',
